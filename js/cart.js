@@ -47,6 +47,6 @@ window.addEventListener('click', function (event) {
 		</div>
 	</div>`;
 
-		cartWrapper.insertAdjacentHTML('beforeend', cartItemHtml)
+		cartWrapper.insertAdjacentHTML('beforeend', cartItemHtml);
 	}
 })
