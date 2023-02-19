@@ -56,6 +56,8 @@ window.addEventListener('click', function (event) {
 		}
 
 		card.querySelector('[data-counter]').innerText = '1';
+
+		toggleCartStatus();
 	}
 
 })
