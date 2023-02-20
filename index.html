@@ -190,8 +190,12 @@
 
 							<!-- Стоимость заказа -->
 							<div class="cart-total">
-								<p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
-								<p><span class="h5">Итого:</span> <span class="total-price">330</span> <span
+								<p data-cart-delivery class="none"><span class="h5">Доставка:</span> <span
+										class="delivery-cost">200
+										грн.</span> <br>
+									<span class="small">Бесплатно при заказе от 600 грн.</span>
+								</p>
+								<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span
 										class="rouble">грн.</span></p>
 							</div>
 							<!-- // Стоимость заказа -->
@@ -219,6 +223,7 @@
 	</div>
 
 	<!-- Подключаем скрипты -->
+	<script src="./js/alcCartPriceAndDelivery.js"></script>
 	<script src="./js/toggleCartStatus.js"></script>
 	<script src="./js/counter.js"></script>
 	<script src="./js/cart.js"></script>
