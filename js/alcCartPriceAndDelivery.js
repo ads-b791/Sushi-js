@@ -4,6 +4,7 @@ function calcCartPriceAndDelivery() {
 	const priceElements = cartWrapper.querySelectorAll('.price__currency');
 	const totalPriceEl = document.querySelector('.total-price');
 	const deliveryCost = document.querySelector('.delivery-cost');
+	const deliveryPlus = document.querySelector('.delivery-plus');
 	const cartDelivery = document.querySelector('[data-cart-delivery]');
 
 
@@ -20,6 +21,11 @@ function calcCartPriceAndDelivery() {
 	} else {
 		cartDelivery.classList.add('none')
 	}
+	if (priceTotal > 0 && priceTotal < 600) {
+		deliveryPlus.classList.remove('none');
+	} else {
+		deliveryPlus.classList.add('none');
+	}
 
 	if (priceTotal >= 600) {
 		deliveryCost.classList.add('free');
@@ -27,5 +33,6 @@ function calcCartPriceAndDelivery() {
 	} else {
 		deliveryCost.classList.remove('free');
 		deliveryCost.innerText = '200 грн.';
+
 	}
 }
