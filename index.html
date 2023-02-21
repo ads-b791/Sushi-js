@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Магазин роллов</title>
+	<title>Sushi-Js</title>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +20,17 @@
 		<div class="container text-center">
 			<img src="img/logo/logo.svg" width="92" alt="Суши и пицца">
 			<div class="display-4">Доставка роллов</div>
-			<p class="lead">Оперативно и вкусно</p>
+			<p class="lead">Быстро и вкусно</p>
 		</div>
 	</header>
 
 	<div class="container mb-5">
 		<div class="row">
 			<div class="col-md-8">
-				<div class="row">
+				<div class="row" id="products-container">
 
 					<!-- Ролл -->
-					<div class="col-md-6">
+					<!--<div class="col-md-6">
 						<div class="card mb-4" data-id="01">
 							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
 							<div class="card-body text-center">
@@ -54,11 +54,11 @@
 
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<!-- // Ролл -->
 
 					<!-- Ролл -->
-					<div class="col-md-6">
+					<!--<div class="col-md-6">
 						<div class="card mb-4" data-id="02">
 							<img class="product-img" src="img/roll/california-tempura.jpg" alt="">
 							<div class="card-body text-center">
@@ -82,11 +82,11 @@
 
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<!-- // Ролл -->
 
 					<!-- Ролл -->
-					<div class="col-md-6">
+					<!--<div class="col-md-6">
 						<div class="card mb-4" data-id="03">
 							<img class="product-img" src="img/roll/zapech-california.jpg" alt="">
 							<div class="card-body text-center">
@@ -111,11 +111,11 @@
 
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<!-- // Ролл -->
 
 					<!-- Ролл -->
-					<div class="col-md-6">
+					<!--<div class="col-md-6">
 						<div class="card mb-4" data-id="04">
 							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
 							<div class="card-body text-center">
@@ -142,7 +142,7 @@
 
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<!-- // Ролл -->
 
 				</div>
@@ -224,6 +224,7 @@
 	</div>
 
 	<!-- Подключаем скрипты -->
+	<script src="./js/renderProducts.js"></script>
 	<script src="./js/alcCartPriceAndDelivery.js"></script>
 	<script src="./js/toggleCartStatus.js"></script>
 	<script src="./js/counter.js"></script>
