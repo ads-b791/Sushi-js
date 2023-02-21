@@ -6,6 +6,7 @@ function calcCartPriceAndDelivery() {
 	const deliveryCost = document.querySelector('.delivery-cost');
 	const deliveryPlus = document.querySelector('.delivery-plus');
 	const cartDelivery = document.querySelector('[data-cart-delivery]');
+	let deliveryPrice = 200;
 
 
 
@@ -14,18 +15,24 @@ function calcCartPriceAndDelivery() {
 		const amountEl = item.closest('.cart-item').querySelector('[data-counter]');
 		priceTotal += parseInt(item.innerText) * parseInt(amountEl.innerText);
 	});
-	totalPriceEl.innerText = priceTotal;
+
+	if (priceTotal > 0 && priceTotal < 600) {
+		totalPriceEl.innerText = priceTotal + deliveryPrice;
+	} else {
+		totalPriceEl.innerText = priceTotal;
+	}
+
 
 	if (priceTotal > 0) {
 		cartDelivery.classList.remove('none')
 	} else {
 		cartDelivery.classList.add('none')
 	}
-	if (priceTotal > 0 && priceTotal < 600) {
-		deliveryPlus.classList.remove('none');
-	} else {
-		deliveryPlus.classList.add('none');
-	}
+	//if (priceTotal > 0 && priceTotal < 600) {
+	//	deliveryPlus.classList.remove('none');
+	//} else {
+	//	deliveryPlus.classList.add('none');
+	//}
 
 	if (priceTotal >= 600) {
 		deliveryCost.classList.add('free');
